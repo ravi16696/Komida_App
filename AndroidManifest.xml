@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.ravi.projecct">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/k_logo"
+        android:label="Komida"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:label="Komida"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="KOMIDA"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Menu"
+            android:label="Restraunt"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Menuitem"
+            android:label="Menu Item"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Rateapp"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Aboutapp"
+            android:label="About"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Foodmenu"
+            android:label="Food Menu"
+            android:parentActivityName=".Menuitem" />
+        <activity
+            android:name=".Login"
+            android:label="Log in" />
+        <activity
+            android:name=".ForgetPass"
+            android:label="Forget Password"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".NewPass"
+            android:label="Set Password"
+            android:parentActivityName=".ForgetPass" />
+        <activity
+            android:name=".SignUp"
+            android:label="Sign up"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Rateitem"
+            android:label="Rate Resturant"
+            android:parentActivityName=".Menuitem" />
+    </application>
+
+</manifest>
